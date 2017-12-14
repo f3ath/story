@@ -90,7 +90,7 @@ class Document {
 }
 ```
 Well, but now I would have to have some ugly `if`s in the constructor checking that at least one of those has been
-provided and throw an exception otherwise to prevent an invalid state. It would get even uglier if we added the 
+provided or throw an exception to prevent an invalid state otherwise. It would get even uglier if we added the 
 data/error coexistence check. Luckily, this was easy to solve.
 
 ## Named Constructors
