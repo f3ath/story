@@ -59,11 +59,12 @@ class Document {
 
 ## Object instantiation and invalid state
 You may note that the previous step broke the test-first rule. Yeah, perhaps. But since there was no actual logic to test,
-it's probably not that big of a sin. Anyway, we're going to fix it right now. The next domain rule [said](http://jsonapi.org/format/#document-top-level)
+it's probably not that big of a sin. Anyway, we're going to fix it right now. The next domain rule [said]:(http://jsonapi.org/format/#document-top-level)
 > A document MUST contain at least one of the following top-level members:
 > - data: the document’s “primary data”
 > - errors: an array of error objects
 > - meta: a meta object that contains non-standard meta-information.
+
 > The members data and errors MUST NOT coexist in the same document.
 
 So it's time to write a Document creation test case. So what could it look like? Clearly, those were `Document`'s 
